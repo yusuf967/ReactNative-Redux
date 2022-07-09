@@ -1,8 +1,8 @@
-const INCREMENT = "INCREMENT"
-const DECREMENT = "DECREMENT"
+export const ADD_NAMES = "ADD_NAMES";
 
-
-export{
-    INCREMENT,
-    DECREMENT
+export const setName=name=>dispatch=>{
+    dispatch({
+        type:ADD_NAMES,
+        payload:name,
+    })
 }
